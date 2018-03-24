@@ -28,7 +28,7 @@
 
             new[] { 1, 2, 3 }
                 .Convert(x => (2 * x * x + 1).ToString("D2"))
-                .Print("strange collection");
+                .Print();
         }
     }
 }
