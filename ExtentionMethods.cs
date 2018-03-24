@@ -55,7 +55,6 @@ namespace AppendixDemo
         public static IEnumerable<TOut> Convert<TOut, TIn>(
             this IEnumerable<TIn> collection, 
             Func<TIn, TOut> convertor)
-            where TOut : class
-            => collection.Select(item => convertor(item));
+            => collection.Select(convertor);
     }
 }
